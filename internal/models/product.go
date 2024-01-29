@@ -9,7 +9,7 @@ type Product struct {
 	Name        string             `json:"name"        bson:"name"`
 	Description string             `json:"description" bson:"description"`
 	Price       float32            `json:"price"       bson:"price"`
-	CreatedAt   string             `json:"-"           bson:"CreatedAt"`
-	UpdatedAt   string             `json:"-"           bson:"UpdatedAt"`
-	DeletedAt   string             `json:"-"           bson:"DeletedAt"`
+	CreatedAt   int64              `json:"-"           bson:"CreatedAt"`
+	UpdatedAt   int64              `json:"-"           bson:"UpdatedAt"`
+	DeletedAt   int64              `json:"-"           bson:"DeletedAt"`
 }
